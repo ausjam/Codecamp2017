@@ -54,19 +54,20 @@
 
 <?php
 
-inc = 0;
+$inc = 0;
 
-  for(inc = 0; inc<=24; inc++){
+
+  for(inc = 0; $rowvar>inc<=24; inc++){
 
   echo '<tr>
 
-     <td>' . $stockinfo[inc][0] . '</td>'
-    '<td>' . $stockinfo[inc][1] . '</td>'
-    '<td>' . $stockinfo[inc][2] . '</td>'
-    '<td>' . $stockinfo[inc][3] . '</td>'
-    '<td>' . $stockinfo[inc][4] . '</td>'
-    '<td>' . $stockinfo[inc][5] . '</td>'
-    '<td>' . $stockinfo[inc][6] . '</td>
+     <td>' . $stockinfo[$inc][0] . '</td>'
+    '<td>' . $stockinfo[$inc][1] . '</td>'
+    '<td>' . $stockinfo[$inc][2] . '</td>'
+    '<td>' . $stockinfo[$inc][3] . '</td>'
+    '<td>' . $stockinfo[$inc][4] . '</td>'
+    '<td>' . $stockinfo[$inc][5] . '</td>'
+    '<td>' . $stockinfo[$inc][6] . '</td>
 
 
   </tr>';
@@ -103,8 +104,10 @@ inc = 0;
 
   var inc = pagenum;
   var lim = pagenum + 24;
+  var len = <?php $rowvar ?>;
 
-    for(inc = pagenum; inc<=lim; inc++){
+
+    for(inc = pagenum; len>inc<=lim; inc++){
 
     <tr>
 
