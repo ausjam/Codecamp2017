@@ -20,3 +20,5 @@ TODO:
 		+ Design - Kolby
 
 	Stock graphs / Data visualization
+
+	Write About Section - Decker
