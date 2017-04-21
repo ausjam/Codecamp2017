@@ -2,7 +2,9 @@
 
 The Meme Exchange
 
+
 Done: Nothing
+
 
 TODO:
 	Account Registration - Austin
@@ -22,3 +24,16 @@ TODO:
 	Stock graphs / Data visualization
 
 	Write About Section - Decker
+
+
+Austin Changes -
+
+	-
+
+Decker Changes -
+
+	-
+
+Kolby Changes -
+
+	-
