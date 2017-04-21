@@ -28,7 +28,15 @@ TODO:
 
 Austin Changes -
 
-	-
+	- Created mainpage html and php
+	- Created Exchange php and test html
+	- Built mainpage bare bones
+
+	Working on:
+
+	- MySQL databases
+	- Fleshing out exchange page
+
 
 Decker Changes -
 
