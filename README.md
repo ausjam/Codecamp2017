@@ -20,3 +20,6 @@ TODO:
 		+ Design - Kolby
 
 	Stock graphs / Data visualization
+
+
+Austin Changes -
