@@ -9,6 +9,8 @@ TODO:
 
 	Dogecoin Payment Proccessing - Decker
 
+		+ https://block.io/docs/basic (Block.io API)
+
 		+ QR Code Payment - Decker
 
 	Meme Stock Database Magic - Austin
