@@ -11,7 +11,7 @@
 
 <?php
 
-php include ('includes/tabtop.php');
+include 'includes/tabtop.php';
 
 ?>
 
@@ -68,7 +68,7 @@ php include ('includes/tabtop.php');
 
 <?php
 
-php include ('includes/footer.php');
+include 'includes/footer.php';
 
 ?>
 
