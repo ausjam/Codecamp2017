@@ -1,6 +1,6 @@
 <?php
 
-require_once "formvalidator.php";
+require_once "PHP/formvalidator.php";
 session_start();
 
 $servername = "50.62.209.3:3306";
@@ -9,7 +9,7 @@ $password = "VerySecureSuchData";
 $dbname = "MemeExchange";
 $itemtable = "user_auth";
 
-if(isset($_POST['submitted']))
+if(isset($_POST['create']))
 {
 	$validator = new FormValidator();
 
@@ -40,21 +40,35 @@ if(isset($_POST['submitted']))
 		$db = mysqli_connect($servername, $username, $password, $dbname);
 
 		//Checks if username already exists
-		$query = "SELECT 'user_name' FROM $itemtable WHERE 'user_name'='"$user_name"'";
-		$result = mysqli_query($db,$query);
+		$query = "SELECT user_name FROM $itemtable WHERE user_name='$user_name'";
+		$result = mysqli_query($db, $query);
 		if($result && mysqli_num_rows($result) > 0)
 		{
+			//Username is taken
+			echo 'Username is already taken';
+		}
+		else
+		{
 			//Inserts User into database
-			$query = "INSERT INTO '$itemtable'(user_name, user_salt, user_hash)
-					values("'$user_name'", "'$user_salt'", "'$user_hash'")";
+			$query = "INSERT INTO $itemtable (user_name, user_salt, user_hash)
+					VALUES ('$user_name', '$user_salt', '$user_hash')";
 			if(!mysqli_query($db, $query))
 			{
+				echo 'Failed to insert into database';
 				//Failed to insert into database
 			}
-			//Success
+			else
+			{
+				echo 'Account registered successfully';
+				//Success
+			}
 		}
 
 		mysqli_close($db);
+	}
+	else
+	{
+
 	}
 }
 

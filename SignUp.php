@@ -18,20 +18,20 @@ $_SESSION['form_token'] = $form_token;
 			<form action="adduser.php" method="post" id="account_creation">
 				<fieldset>
 					<p>
-						<input type="text" id="user_name" value="" maxlength="20"/>
+						<input type="text" name="user_name" value="" maxlength="20"/>
 						<label for="user_name">Username</label>
 					</p>
 					<p>
-						<input type="password" id="user_password" value="" maxlength="40"/>
+						<input type="password" name="user_password" value="" maxlength="40"/>
 						<label for="user_password">Password</label>
 					</p>
 					<p>
-						<input type="password" id="user_password_confirm" value="" maxlength="40"/>
+						<input type="password" name="user_password_confirm" value="" maxlength="40"/>
 						<label for="user_passsword_confirm">Confirm Password</label>
 					</p>
-					<input tpye="hidden" name="form_token" value="<?php echo $form_token; ?>"/>
+					<input type="hidden" name="form_token" value="<?php echo $form_token; ?>"/>
 					<p>
-						<input type="submit" value="Create Account"/>
+						<input type="submit" name="create" value="Create Account"/>
 					</p>
 				</fieldset>
 			</form>
