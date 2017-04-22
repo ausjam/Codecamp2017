@@ -19,6 +19,15 @@
 
   <body>
 
+<div id="stockpagebuttons" class="stockpages">
+  <button onclick="changepage(0)" type="button" name="button">1</button>
+  <button onclick="changepage(25)" type="button" name="button">2</button>
+  <button onclick="changepage(50)" type="button" name="button">3</button>
+  <button onclick="changepage(75)" type="button" name="button">4</button>
+  <button onclick="changepage(100)" type="button" name="button">5</button>
+  <button onclick="changepage(125)" type="button" name="button">6</button>
+</div>
+
 
 
 <div class="stocktable">
@@ -49,9 +58,7 @@ $inc = 0;
 
   //for(inc = 0; $rowvar>inc<=24; inc++){
 
-  $endofstream = $rowvar;
-
-  for($inc = 0; $inc<$endofstream; $inc++){
+  for($inc = 0; $inc<=24; $inc++){
 
   echo '<tr>
 
@@ -91,6 +98,46 @@ $inc = 0;
   include 'footer.php';
 
   ?>
+
+
+
+  <script type="text/javascript">
+
+  function changepage(pagenum) {
+
+  //put the next set of data into a variable
+
+  //change the inner html to the new set of data
+
+  var inc = pagenum;
+  var lim = pagenum + 24;
+  var len = <?php $rowvar ?>;
+
+
+    for(inc = pagenum; len>inc<=lim; inc++){
+
+    <tr>
+
+      <td> + <?php $stockinfo[inc][0] ?> + </td>
+      <td> + <?php $stockinfo[inc][1] ?> + </td>
+      <td> + <?php $stockinfo[inc][2] ?> + </td>
+      <td> + <?php $stockinfo[inc][3] ?> + </td>
+      <td> + <?php $stockinfo[inc][4] ?> + </td>
+      <td> + <?php $stockinfo[inc][5] ?> + </td>
+      <td> + <?php $stockinfo[inc][6] ?> + </td>
+
+
+    </tr> = "String1";
+
+    }
+
+
+  document.getElementById("Mainstockstats").innerHTML = String1;
+
+
+  }
+
+  </script>
 
 
 
