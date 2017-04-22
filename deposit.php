@@ -1,12 +1,12 @@
 <?php
 
-$servername = "localhost";
+$servername = "172.23.147.44";
 $username = "MemeAdmin";
 $password = "VerySecureSuchData";
 $dbname = "MemeExchange";
 $itemtable = "pending_deposit";
 
-$loginurl = "D:/development/codecamp2017/login.php";
+$loginurl = "login.php";
 
 //require_once 'PHP/block_io.php';
 require_once 'PHP/auth.php';

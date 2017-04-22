@@ -21,13 +21,13 @@ echo "<head>
 
   <div class=\"buttondiv\">
 
-  <a href=\"http://exchangememes.com/index.php\"><button type=\"button\" name=\"Home\">Home</button></a>
+  <a href=\"index.php\"><button type=\"button\" name=\"Home\">Home</button></a>
 
-  <a href=\"http://exchangememes.com/exchangepage.php\"><button type=\"button\" name=\"Exchange\">Exchange</button></a>
+  <a href=\"exchangepage.php\"><button type=\"button\" name=\"Exchange\">Exchange</button></a>
 
-  <a href=\"http://exchangememes.com/Account.php\"><button type=\"button\" name=\"Account\">Account</button></a>
+  <a href=\"Account.php\"><button type=\"button\" name=\"Account\">Account</button></a>
 
-  <a href=\"http://exchangememes.com/Login.php\"><button type=\"button\" name=\"Login\">Login</button></a>
+  <a href=\"Login.php\"><button type=\"button\" name=\"Login\">Login</button></a>
 
   </div>
 

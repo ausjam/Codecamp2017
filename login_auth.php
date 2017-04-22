@@ -4,7 +4,7 @@ require_once "PHP/formvalidator.php";
 require_once "PHP/passhash.php";
 session_start();
 
-$servername = "localhost";
+$servername = "172.23.147.44";
 $username = "MemeAdmin";
 $password = "VerySecureSuchData";
 $dbname = "MemeExchange";
