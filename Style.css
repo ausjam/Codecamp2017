@@ -32,6 +32,7 @@ margin-left: 15%;
 padding-top: 10px;
 vertical-align: top;
 height: 100%;
+font-family: 'Play';
 
 }
 
@@ -45,7 +46,6 @@ height: 100%;
       text-decoration: none;
       display: inline-block;
       font-size: 24px;
-      height: 100%;
 
 }
 
@@ -63,6 +63,7 @@ background-color: #fdd835;
 footer {
 
 background-color: #fdd835;
+font-family: 'Play';
 
 }
 
@@ -100,18 +101,140 @@ color: grey;
 
 /* Style for the stock tables */
 
+.mainstockdisplay {
+
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 65%;
+padding-top: 25px;
+padding-bottom: 25px;
+margin: auto;
+font-family: 'Play';
+
+}
+
+.mainstockdisplay th {
+
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #fdd835;
+color: white;
+
+}
+
+.mainstockdisplay tr {
+
+border: 1px solid #ddd;
+padding: 8px;
+
+}
+
+.mainstockdisplay tr:hover {
+
+background-color: #f5f5f5
+
+}
+
+.mainstockdisplay td {
+
+border: 1px solid #ddd;
+padding: 8px;
+
+}
+
 
 
 
 
 /* Style for the index */
 
+h1 {
+
+margin: auto;
+width: 70%;
+padding: none;
+font-family: 'Play';
+
+}
+
+.aboutsection {
+
+font-family: 'Play';
+
+}
 
 
 
 /* Style for the exchangepage */
 
 
+
+.exchangehead {
+
+width: 25%;
+margin: auto;
+
+}
+
+.stockpages {
+
+width: 25%;
+margin: auto;
+
+}
+
+.stockpages button {
+
+color: black;
+float: left;
+padding: 8px 16px;
+text-decoration: none;
+
+}
+
+
+#mainstockstats {
+
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 65%;
+padding-top: 25px;
+padding-bottom: 25px;
+margin: auto;
+font-family: 'Play';
+
+}
+
+#mainstockstats th {
+
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #fdd835;
+color: white;
+
+}
+
+#mainstockstats tr {
+
+border: 1px solid #ddd;
+padding: 8px;
+
+}
+
+#mainstockstats tr:hover {
+
+background-color: #f5f5f5
+
+}
+
+#mainstockstats td {
+
+border: 1px solid #ddd;
+padding: 8px;
+
+}
 
 
 /* Style for the account sign up */
