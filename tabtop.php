@@ -5,6 +5,7 @@ echo "<head>
   <title>Exchange Memes</title>
   <link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\">
   <link href='//fonts.googleapis.com/css?family=Play' rel='stylesheet'>
+  <link href='//fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
 </head>
 <body>
 
