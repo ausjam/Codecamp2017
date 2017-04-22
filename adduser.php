@@ -4,7 +4,7 @@ require_once "PHP/formvalidator.php";
 require_once "PHP/passhash.php";
 session_start();
 
-$servername = "50.62.209.3:3306";
+$servername = "172.23.147.44";
 $username = "MemeAdmin";
 $password = "VerySecureSuchData";
 $dbname = "MemeExchange";
@@ -47,7 +47,7 @@ if(isset($_POST['create']))
 		if($result && mysqli_num_rows($result) > 0)
 		{
 			//Username is taken
-			echo 'Username is already taken';
+			echo 'Username is already taken - RAWR';
 		}
 		else
 		{
