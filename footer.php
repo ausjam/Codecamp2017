@@ -9,9 +9,9 @@ echo "<footer>
 
 <ul>
 
-<li></li>
-<li></li>
-<li></li>
+<li><a href=\"index.php\">Home</a></li>
+<li><a href=\"exchangepage.php\">Exchange</a></li>
+<li><a href=\"Login.php\">Login</a></li>
 
 </ul>
 
@@ -19,9 +19,9 @@ echo "<footer>
 
 <ul>
 
-<li></li>
-<li></li>
-<li></li>
+<li><a href=\"https://twitter.com/TMEMeme\">Twitter</a></li>
+<li><a href=\"https://TheMemeExchange.imgur.com\">Imgur</a></li>
+<li><a href=\"https://www.facebook.com/TheMemeExchangeUS/\">Facebook</a></li>
 
 </ul>
 
@@ -29,9 +29,9 @@ echo "<footer>
 
 <ul>
 
-<li></li>
-<li></li>
-<li></li>
+<li>Timpanogos High School</li>
+<li>1358 N 90 E, Orem, UT 84057</li>
+<li>801-400-7651</li>
 
 </ul>
 
