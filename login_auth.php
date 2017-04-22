@@ -4,11 +4,13 @@ require_once "PHP/formvalidator.php";
 require_once "PHP/passhash.php";
 session_start();
 
-$servername = "50.62.209.3:3306";
+$servername = "localhost";
 $username = "MemeAdmin";
 $password = "VerySecureSuchData";
 $dbname = "MemeExchange";
 $itemtable = "user_auth";
+
+$redirect = "http://www.excahngememes.com/index.php";
 
 if(isset($_POST['login']))
 {
@@ -46,9 +48,6 @@ if(isset($_POST['login']))
 			$test_hash .= $user_salt;
 			$test_hash = hash('sha256', $test_hash);
 
-			//echo $test_hash;
-			//echo $user_hash;
-
 			if($test_hash == $user_hash)
 			{
 				$auth_token = hash("sha512",uniqid("",true));
@@ -58,7 +57,7 @@ if(isset($_POST['login']))
 				mysqli_query($db, $query);
 				setcookie("auth_token", $auth_token);
 
-				echo 'Logged in Successfully';
+				header("Location: " . $redirect);
 				//Login Successful
 			}
 		}

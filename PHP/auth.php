@@ -13,7 +13,7 @@ class UserAuthenticator
 		if(isset($_COOKIE['auth_token']))
 		{
 			$cookie_token = filter_var($_COOKIE['auth_token'], FILTER_SANITIZE_STRING);
-			$db = mysqli_connect("50.62.209.3:3306", "MemeAdmin",
+			$db = mysqli_connect("localhost", "MemeAdmin",
 					"VerySecureSuchData", "MemeExchange");
 
 			$query = "SELECT user_name, user_type FROM user_auth WHERE auth_token='$cookie_token'";
