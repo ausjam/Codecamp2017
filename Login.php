@@ -1,3 +1,12 @@
+<html>
+
+<?php
+
+include 'tabtop.php';
+
+?>
+
+
 <?php
 
 session_start();
@@ -54,5 +63,11 @@ echo $_COOKIE['auth_token'];
 <div>
 Don't have an account? Sign up <a href="SignUp.php">here!</a>
 </div>
+
+<?php
+
+include 'footer.php';
+
+?>
 
 </html>

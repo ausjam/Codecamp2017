@@ -1,3 +1,12 @@
+<html>
+
+<?php
+
+include 'tabtop.php';
+
+?>
+
+
 <?php
 
 session_start();
@@ -57,4 +66,11 @@ $_SESSION['form_token'] = $form_token;
 			</script>
 		</body>
 	</div>
+
+	<?php
+
+	include 'footer.php';
+
+	?>
+
 </html>
