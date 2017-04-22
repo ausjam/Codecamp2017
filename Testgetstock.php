@@ -1,6 +1,9 @@
 <?php
 
 
+//header('Content-Type: text/html; charset=Windows-1252');
+
+
 // Set up variables for connection.
 
 $servername = "50.62.209.3:3306";
@@ -21,7 +24,7 @@ $db = mysqli_connect($servername,$username,$password,$dbname)
 $query = "SELECT * FROM StockValues";
 mysqli_query($db, $query) or die('Error querying database.');
 
-
+//Pulls records of unsold items for counting purposes.
 
 $result = mysqli_query($db, $query);
 
@@ -37,8 +40,6 @@ $stockinfo[$rowvar][1] = $row['StockName'];
 $stockinfo[$rowvar][2] = $row['StockAbb'];
 $stockinfo[$rowvar][3] = $row['Tradedin'];
 $stockinfo[$rowvar][4] = $row['CurrentValue'];
-$stockinfo[$rowvar][5] = $row['AmountChange'];
-$stockinfo[$rowvar][6] = $row['PercentChange'];
 
 $rowvar++;
 

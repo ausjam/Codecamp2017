@@ -1,17 +1,35 @@
 <?php
 
-echo "<div class=\"tabtop\">
+echo "<head>
+  <meta charset=\"utf-8\">
+  <title>Exchange Memes</title>
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\">
+  <link href='//fonts.googleapis.com/css?family=Play' rel='stylesheet'>
+</head>
+<body>
 
-<!-- This div is to hold the navigation buttons at the start of the page -->
+  <div class=\"tabtop\">
 
-<button type=\"button\" name=\"Home\"></button>
+  <!-- This div is to hold the navigation buttons at the start of the page -->
 
-<button type=\"button\" name=\"Exchange\"></button>
+  <img class=\"logo\" src=\"Logo.png\" alt=\"Meme Exchange\">
 
-<button type=\"button\" name=\"Account\"></button>
+  <img class=\"textlogo\" src=\"textlogo.png\" alt=\"Meme Exchange\">
 
-<button type=\"button\" name=\"Login\"></button>
 
-</div>"
+
+  <div class=\"buttondiv\">
+
+  <button type=\"button\" name=\"Home\">Home</button>
+
+  <button type=\"button\" name=\"Exchange\">Exchange</button>
+
+  <button type=\"button\" name=\"Account\">Account</button>
+
+  <button type=\"button\" name=\"Login\">Login</button>
+
+  </div>
+
+  </div>"
 
  ?>
