@@ -21,9 +21,9 @@ echo "<head>
 
   <div class=\"buttondiv\">
 
-  <button type=\"button\" name=\"Home\">Home</button>
+  <a href=\"http://exchangememes.com/index.php\"><button type=\"button\" name=\"Home\">Home</button></a>
 
-  <button type=\"button\" name=\"Exchange\">Exchange</button>
+  <a href=\"http://exchangememes.com/exchangepage.php\"><button type=\"button\" name=\"Exchange\">Exchange</button></a>
 
   <button type=\"button\" name=\"Account\">Account</button>
 
