@@ -48,4 +48,9 @@ $_SESSION['form_token'] = $form_token;
 			</script>
 		</body>
 	</div>
+
+<div>
+Don't have an account? Sign up <a href="SignUp.php">here!</a>
+</div>
+
 </html>

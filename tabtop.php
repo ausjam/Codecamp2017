@@ -25,9 +25,9 @@ echo "<head>
 
   <a href=\"http://exchangememes.com/exchangepage.php\"><button type=\"button\" name=\"Exchange\">Exchange</button></a>
 
-  <button type=\"button\" name=\"Account\">Account</button>
+  <a href=\"http://exchangememes.com/Account.php\"><button type=\"button\" name=\"Account\">Account</button></a>
 
-  <button type=\"button\" name=\"Login\">Login</button>
+  <a href=\"http://exchangememes.com/Login.php\"><button type=\"button\" name=\"Login\">Login</button></a>
 
   </div>
 
