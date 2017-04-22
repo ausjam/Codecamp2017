@@ -57,7 +57,7 @@ $inc = 0;
 
     <td>' . $stockinfo[$inc][0] . '</td>
     <td>' . $stockinfo[$inc][1] . '</td>
-    <td>' . $stockinfo[$inc][2] . '</td>
+    <td><a href="individualmeme.php?sn=' . $stockinfo[$inc][2] . '">' . $stockinfo[$inc][2] . '</a></td>
     <td>' . $stockinfo[$inc][3] . '</td>
     <td>' . $stockinfo[$inc][4] . '</td>
     <td>' . $stockinfo[$inc][5] . '</td>

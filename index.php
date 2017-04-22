@@ -1,5 +1,5 @@
 <html>
-  
+
 <?php
 
 include 'tabtop.php';
@@ -10,6 +10,17 @@ include 'tabtop.php';
 <body>
 
     <!-- The body contains all the information on the main page -->
+
+<div class="accountquote">
+  
+<br>
+
+<p>"Price is what you pay; value is what you get.
+	Whether we're talking about stocks or memes,
+	I like buying quality content when it is marked down."
+	 - A Great Man</p>
+
+</div>
 
 <h1>Welcome to the Meme Stock Exchange, Please Enjoy Your Stay!</h1>
 
@@ -94,7 +105,7 @@ mysqli_close($db);
 
 <!-- This div is for a brief description of what this site is and how it works -->
 
-<h1></h1>
+<h1>What is the Meme Stock Exchange?</h1>
 
 <p></p>
 
