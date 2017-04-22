@@ -33,6 +33,7 @@ if(isset($_POST['login']))
 
 		$query = "SELECT user_salt, user_hash FROM $itemtable WHERE user_name='$user_name'";
 		$result = mysqli_query($db, $query);
+		mysqli_close($db);
 		if($result && mysqli_num_rows($result) > 0)
 		{
 			mysqli_data_seek($result, 0);

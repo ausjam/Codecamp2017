@@ -65,7 +65,6 @@ if(isset($_POST['create']))
 				//Success
 			}
 		}
-
 		mysqli_close($db);
 	}
 	else
