@@ -15,8 +15,6 @@ session_start();
 $form_token = md5(uniqid('auth_',true));
 $_SESSION['form_token'] = $form_token;
 
-echo $_COOKIE['auth_token'];
-
 ?>
 
 <html>

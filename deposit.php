@@ -65,7 +65,10 @@ else
 	<img src="http://chart.googleapis.com/chart?chs=125x125&cht=qr&chl=<?php echo $address; ?>">
 	<p><?php echo $address; ?></p>
 </body>
-
-
 	</div>
+<?php
+
+include 'footer.php';
+
+?>
 </html>
