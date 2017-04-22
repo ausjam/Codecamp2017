@@ -7,6 +7,8 @@ echo "<footer>
 
 <!-- Site Map -->
 
+
+
 <ul>
 
 <li><a href=\"index.php\">Home</a></li>
@@ -34,6 +36,15 @@ echo "<footer>
 <li>801-400-7651</li>
 
 </ul>
+
+<ul>
+
+<li>Produced by: Austin VanDyke</li>
+<li>Ryan Decker</li>
+<li>Kolby Ross</li>
+
+</ul>
+
 
 </footer>"
 
