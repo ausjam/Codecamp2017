@@ -66,6 +66,7 @@ if(isset($_POST['create']))
 			}
 		}
 		mysqli_close($db);
+		unset($connection);
 	}
 	else
 	{

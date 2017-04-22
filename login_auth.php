@@ -54,6 +54,7 @@ if(isset($_POST['login']))
 
 				$query = "UPDATE $itemtable SET auth_token = '$auth_token' WHERE
 						user_name='$user_name'";
+						echo $query;
 				mysqli_query($db, $query);
 				setcookie("auth_token", $auth_token);
 
