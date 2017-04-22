@@ -1,0 +1,68 @@
+/* Style for the tabtop */
+
+
+.tabtop {
+
+
+
+}
+
+.tabtop img {
+
+max-width: 200px;
+max-height: 200px;
+display: inline-block;
+
+}
+
+.tabtop p {
+
+font-family: 'Play';
+display: inline-block;
+
+}
+
+.tabtop button {
+
+  background-color: white;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+
+}
+
+
+
+
+/* Style for the footer */
+
+
+
+
+
+/* Style for the stock tables */
+
+
+
+
+
+/* Style for the index */
+
+
+
+
+/* Style for the exchangepage */
+
+
+
+
+/* Style for the account sign up */
+
+
+
+
+/* Style for the account page */
