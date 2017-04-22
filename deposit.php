@@ -1,3 +1,12 @@
+
+<html>
+
+<?php
+
+include 'tabtop.php';
+
+?>
+
 <?php
 
 $servername = "172.23.147.44";
@@ -38,6 +47,7 @@ if($user_name != false)
 		$address = $address_info->data->address;
 		$query = "INSERT INTO $itemtable (user_name, address) VALUES ('$user_name', '$address')";
 		mysqli_query($db, $query);
+		$block_io->create_notification(array('type' => 'https://ExchangeMemes.com/payment_proc.php'));
 	}
 	mysqli_close($db);
 }
@@ -48,12 +58,14 @@ else
 
 ?>
 
-<html>
+
 	<div class="deposit">
 		<h1>Deposit Dogecoin</h1>
-		<body>
-			<img src="http://chart.googleapis.com/chart?chs=125x125&cht=qr&chl=<?php echo $address; ?>">
-			<p><?php echo $address; ?></p>
-		</body>
+<body>
+	<img src="http://chart.googleapis.com/chart?chs=125x125&cht=qr&chl=<?php echo $address; ?>">
+	<p><?php echo $address; ?></p>
+</body>
+
+
 	</div>
 </html>

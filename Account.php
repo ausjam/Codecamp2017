@@ -39,11 +39,11 @@ include 'tabtop.php';
 
 <!-- this will echo all the users owned stock -->
 
-<div class="mainstockdisplay">
+<div class="accountdisplay">
 
 <!-- This div is used for account stock totals -->
 
-<table> <!-- This table will hold the meme stock values -->
+<table class = "accounttable"> <!-- This table will hold the meme stock values -->
 
   <tr> <!-- This row is for table headers -->
     <th>Stock</th> <!-- This row is for stock names -->
@@ -67,8 +67,8 @@ $itemtable = "StockValues";
 $db = mysqli_connect($servername,$username,$password,$dbname)
  or die('Error connecting to MySQL server.');
 
-$query = "SELECT StockAbb, shares FROM stock_amount WHERE user_name = $user_name";
-mysqli_query($db, $query) or die('Error querying database.');
+$query = "SELECT StockAbb, shares FROM stock_amount WHERE user_name = '$user_name'";
+mysqli_query($db, $query) or die('No data to display.');
 
 $result = mysqli_query($db, $query);
 
@@ -85,6 +85,10 @@ echo
 </tr>';
 
 }
+
+$query = "SELECT balance FROM user_auth WHERE user_name='$user_name'";
+$result = mysqli_query($db, $query);
+$balance = mysqli_fetch_row($result)[0];
 
 mysqli_close($db);
 
@@ -104,15 +108,11 @@ mysqli_close($db);
 
 <div class="acctotals">
 
-<p>Account ------</p>
+<p>Account ------ </p>
 
-<p>Current Account Balance</p>
+<p>Current Account Balance: <?php echo $balance ?></p>
 
-<p>Current Highest Stock</p>
-
-<p>Total Investment</p>
-
-<p>Submit a Meme</p>
+<p><a href="">Submit a Meme</a></p>
 
 </div>
 
