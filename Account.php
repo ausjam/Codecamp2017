@@ -112,7 +112,7 @@ mysqli_close($db);
 
 <p>Current Account Balance: <?php echo $balance ?></p>
 
-<p><a href="">Submit a Meme</a></p>
+<p><a href="deposit.php">Deposit Dogecoin</a></p>
 
 </div>
 
