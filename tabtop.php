@@ -1,21 +1,35 @@
 <?php
 
-echo "<div class=\"tabtop\">
+echo "<head>
+  <meta charset=\"utf-8\">
+  <title>Exchange Memes</title>
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\">
+  <link href='//fonts.googleapis.com/css?family=Play' rel='stylesheet'>
+</head>
+<body>
 
-<!-- This div is to hold the navigation buttons at the start of the page -->
+  <div class=\"tabtop\">
 
-<img src=\"Logo.png\" alt=\"Meme Exchange\">
+  <!-- This div is to hold the navigation buttons at the start of the page -->
 
-<p>MEME EXCHANGE</p>
+  <img class=\"logo\" src=\"Logo.png\" alt=\"Meme Exchange\">
 
-<button type=\"button\" name=\"Home\">Home</button>
+  <img class=\"textlogo\" src=\"textlogo.png\" alt=\"Meme Exchange\">
 
-<button type=\"button\" name=\"Exchange\">Exchange</button>
 
-<button type=\"button\" name=\"Account\">Account</button>
 
-<button type=\"button\" name=\"Login\">Login</button>
+  <div class=\"buttondiv\">
 
-</div>"
+  <button type=\"button\" name=\"Home\">Home</button>
+
+  <button type=\"button\" name=\"Exchange\">Exchange</button>
+
+  <button type=\"button\" name=\"Account\">Account</button>
+
+  <button type=\"button\" name=\"Login\">Login</button>
+
+  </div>
+
+  </div>"
 
  ?>

@@ -1,14 +1,5 @@
 <html>
-  <head>
-    <meta charset=\"utf-8\">
-    <title>Exchange Memes</title>
-
-  <!--  <link rel="stylesheet" type="text/css" href="Style.css"> -->
-
-  </head>
-
-
-
+  
 <?php
 
 include 'tabtop.php';

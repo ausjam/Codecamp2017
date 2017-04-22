@@ -3,22 +3,35 @@
 
 .tabtop {
 
-
+max-height: 300px;
 
 }
 
-.tabtop img {
+.logo {
+
+max-width: 100px;
+max-height: 100px;
+display: inline-block;
+padding-left: 5%;
+
+}
+
+.textlogo {
 
 max-width: 200px;
 max-height: 200px;
 display: inline-block;
+padding-bottom: 35px;
 
 }
 
-.tabtop p {
+.buttondiv {
 
-font-family: 'Play';
 display: inline-block;
+margin-left: 15%;
+padding-top: 10px;
+vertical-align: top;
+height: 100%;
 
 }
 
@@ -31,7 +44,14 @@ display: inline-block;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 24px;
+      height: 100%;
+
+}
+
+.tabtop button:hover {
+
+background-color: #fdd835;
 
 }
 
@@ -40,7 +60,17 @@ display: inline-block;
 
 /* Style for the footer */
 
+footer {
 
+background-color: #fdd835;
+
+}
+
+footer ul {
+
+
+
+}
 
 
 

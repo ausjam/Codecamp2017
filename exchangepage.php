@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Meme Exchange</title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
-  </head>
 
   <?php
 
