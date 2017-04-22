@@ -8,12 +8,8 @@ session_start();
 $loginurl = "login.php";
 
 $authenticator = new UserAuthenticator;
-$user_name = $authenticator->user_auth('0');
-if($user_name != false)
-{
-	//Magic goes here
-}
-else
+$user_name = $authenticator->user_auth(0);
+if($user_name == false)
 {
 	header("Location: " . $loginurl);
 }
@@ -60,7 +56,7 @@ include 'tabtop.php';
 
 // Set up variables for connection.
 
-$servername = "50.62.209.3:3306";
+$servername = "172.23.147.44";
 $username = "MemeAdmin";
 $password = "VerySecureSuchData";
 $dbname = "MemeExchange";

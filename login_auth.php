@@ -53,11 +53,10 @@ if(isset($_POST['login']))
 
 				$query = "UPDATE $itemtable SET auth_token = '$auth_token' WHERE user_name='$user_name'";
 				mysqli_query($db, $query);
-				echo ($query);
 
 				setcookie("auth_token", $auth_token);
 
-				//header("Location: " . $redirect);
+				header("Location: " . $redirect);
 				//Login Successful
 			}
 			mysqli_close($db);
