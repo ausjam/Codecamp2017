@@ -5,7 +5,7 @@
 require_once 'PHP/auth.php';
 session_start();
 
-$loginurl = "D:/development/codecamp2017/login.php";
+$loginurl = "login.php";
 
 $authenticator = new UserAuthenticator;
 $user_name = $authenticator->user_auth('0');

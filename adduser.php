@@ -47,12 +47,12 @@ if(isset($_POST['create']))
 		if($result && mysqli_num_rows($result) > 0)
 		{
 			//Username is taken
-			echo 'Username is already taken - RAWR';
+			echo 'Username is already taken';
 		}
 		else
 		{
 			//Inserts User into database
-			$query = "UPDATE $itemtable (user_name, user_salt, user_hash)
+			$query = "INSERT INTO $itemtable (user_name, user_salt, user_hash)
 					VALUES ('$user_name', '$user_salt', '$user_hash')";
 			if(!mysqli_query($db, $query))
 			{

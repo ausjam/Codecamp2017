@@ -10,7 +10,7 @@ $password = "VerySecureSuchData";
 $dbname = "MemeExchange";
 $itemtable = "user_auth";
 
-$redirect = "http://www.excahngememes.com/index.php";
+$redirect = "index.php";
 
 if(isset($_POST['login']))
 {
@@ -57,7 +57,7 @@ if(isset($_POST['login']))
 				mysqli_query($db, $query);
 				setcookie("auth_token", $auth_token);
 
-				header("Location: " . $redirect);
+				//header("Location: " . $redirect);
 				//Login Successful
 			}
 		}
