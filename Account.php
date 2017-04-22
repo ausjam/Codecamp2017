@@ -37,17 +37,72 @@ include 'tabtop.php';
 
 <div class="accountcontainer">
 
+
+
+<div class="portfolio">
+
+<!-- this will echo all the users owned stock -->
+
+<div class="mainstockdisplay">
+
+<!-- This div is used for account stock totals -->
+
+<table> <!-- This table will hold the meme stock values -->
+
+  <tr> <!-- This row is for table headers -->
+    <th>Stock</th> <!-- This row is for stock names -->
+    <th>Amount Owned</th> <!-- This row is for amount of stock owned -->
+
+  </tr>
+
+<!-- This row and following rows will be individual memes stock listings -->
+ <?php
+
+// Set up variables for connection.
+
+$servername = "50.62.209.3:3306";
+$username = "MemeAdmin";
+$password = "VerySecureSuchData";
+$dbname = "MemeExchange";
+$itemtable = "StockValues";
+
+// Create connection
+
+$db = mysqli_connect($servername,$username,$password,$dbname)
+ or die('Error connecting to MySQL server.');
+
+$query = "SELECT StockAbb, shares FROM stock_amount WHERE user_name = $user_name";
+mysqli_query($db, $query) or die('Error querying database.');
+
+$result = mysqli_query($db, $query);
+
+while ($row = mysqli_fetch_array($result)) {
+//echo $row['IDnumber'] . ' ' . $row['StockName'] . ': ' . $row['StockAbb'] . ' ' . $row['Tradedin'] . ' ' . $row['CurrentValue'] .'<br />';
+
+echo
+
+'<tr>
+
+  <td>' . $row['StockAbb'] . '</td>
+  <td>' . $row['shares'] . '</td>
+
+</tr>';
+
+}
+
+mysqli_close($db);
+
+ ?>
+
+</table>
+
+</div>
+
 </div>
 
 <div class="graphs">
 
-
-
-</div>
-
-<div class="portfolio">
-
-
+<!-- this will show the portfolio in a visual format -->
 
 </div>
 
